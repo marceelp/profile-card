@@ -1,0 +1,92 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --line-gray: hsl(0, 0%, 84%);
+    --white: hsl(0, 100%, 100%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.6rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-one {
+    position: absolute;
+    transform: translate(-50rem, -40rem);
+}
+
+.background-two {
+    position: absolute;
+    transform: translate(47rem, 50rem);
+}
+
+.card {
+    background-color: var(--white);
+    color: var(--dark-desaturated-blue);
+    border-radius: 1rem;
+    width: 35rem;
+    max-height: 38rem;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.profile-image {
+    transform: translateY(-6rem);
+    border: 5px solid var(--white);
+    border-radius: 50%;
+}
+
+.profile-text {
+    transform: translateY(-3.4rem);
+    font-size: 1.4rem;
+}
+
+h1 {
+    transform: translateY(-4.2rem);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+p, span {
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+.stats {
+    transform: translateY(-0.8rem);
+    border-top: 1px solid var(--line-gray);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2.2rem;
+}
+
+.stats-text {
+    color: var(--dark-gray);
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
